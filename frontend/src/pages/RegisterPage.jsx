@@ -30,7 +30,7 @@ export default function RegisterPage() {
       const msg = err.response?.data;
       setError(
         typeof msg === 'string' ? msg :
-        msg?.message ?? 'Registration failed. Please try again.'
+          msg?.message ?? 'Registration failed. Please try again.'
       );
     } finally {
       setLoading(false);
